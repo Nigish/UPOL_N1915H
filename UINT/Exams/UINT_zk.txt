@@ -1,0 +1,1103 @@
+Počítač ENIAC měl program uložený: 
+0(a) v paměti
+1(b) v zapojení přepínačů a kabelů
+0(c) nikde 
+0(d) nebyl programovatelný
+
+Logické elektronické obvody nerealizují logické: 
+0(a) proměnné 
+0(b) operace 
+0(c) funkce 
+1(d) algebry
+
+De Morganovy zákony říkají (+ = log. součet, * = log. součin, - = negace): 
+0(a) x + x = x 
+1(b) -(x + y) = -x * -y 
+0(c) --x = x 
+0(d) x + -x = 1
+
+Log. operace implikace je nepravdivá když 1. a 2. operand jsou po řadě rovny: 
+0(a) 0 a 0 
+0(b) 1 a 1 
+1(c) 1 a 0 
+0(d) 0 a 1
+
+Piercova funkce (NOR) je pravdivá, když oba operandy mají hodnotu: 
+0(a) 1 
+1(b) 0 
+0(c) stejnou 
+0(d) různou
+
+Úplná konjunktivní normální forma log. výrazu je všech log. proměnných nebo jejich negací logický: 
+0(a) součet součtů 
+0(b) součet součinů 
+1(c) součin součtů 
+0(d) součin součinů
+
+Karnaughova metoda (Veitch diagram) slouží pro log. funkce k: 
+0(a) vyhodnocení 
+0(b) invertování 
+1(c) zjednodušení výrazu 
+0(d) převodu do normální formy
+
+Minimální úplný systém log. funkcí je takový, který: 
+0(a) obsahuje jen jednu log. funkci 
+0(b) obsahuje negaci 
+0(c) obsahuje Shefferovu nebo Piercovu funkci 
+1(d) nelze redukovat, aby zůstal úplný
+
+Vstupy log. obvodů reprezentují log.: 
+0(a) funkce 
+0(b) operace 
+0(c) hodnoty 
+1(d) proměnné
+
+Komparátor je log. obvod, který: 
+1(a) porovnává hodnoty na vstupech 
+0(b) přepíná na výstup hodnotu na jednom ze vstupů 
+0(c) nastaví na 1 jeden z výstupů podle hodnoty na vstupech 
+0(d) počítá impulsy na vstupu
+
+Hodinový signál sekvenčního log. obvodu: 
+0(a) definuje stav vstupů 
+0(b) definuje stav výstupů 
+0(c) mění funkci obvodu 
+1(d) synchronizuje obvod
+
+Bistabilní klopné obvody mají stabilní stav(y): 
+0(a) žádný
+0(b) 1 
+1(c) 2 
+0(d) více než 2
+
+Reprezentace čísel s fixní řádovou čárkou se nepoužívá při: 
+1(a) prezenci jednotky pro výpočty v reprezentaci čísel s plovoucí řádovou čárkou 
+0(b) absenci jednotky pro výpočty v reprezentaci čísel s plovoucí řádovou čárkou 
+0(c) prezenci jednotky pro výpočty s celými čísly 
+0(d) absenci jednotky pro výpočty s celými čísly
+
+(Původní) kódová tabulka ASCII obsahuje znaků: 
+0(a) 127 
+1(b) 128 
+0(c) 255 
+0(d) 256
+
+Znaky české abecedy (jejich čísla) jsou kódováním UTF-8 kódovány do bytů počtu: 
+0(a) 1 
+0(b) 1 nebo 2 
+1(c) 2 
+0(d) 1 až 3
+
+UTF signatura, tzv. Byte-Order Mark (BOM), kód znaku "nedělitelná mezera nulové délky", je určena k rozlišení pořadí bytů u vícebajtových reprezentací znaků u kódování: 
+0(a) ASCII 
+0(b) UTF-7 
+0(c) UTF-8 
+1(d) UTF-16 
+
+Kód parity (paritní bit) je možné vypočítat z bitů dat pomocí log. operace: 
+0(a) součtu 
+0(b) součinu 
+0(c) ekvivalence 
+1(d) nonekvivalence
+
+Příkon dnešních bězných desktopových PC je rámcově: 
+0(a) do 10 W 
+0(b) 10 až 100 W 
+1(c) 100 až 1000 W 
+0(d) víc než 1000W
+
+Taktovací frekvence procesoru je vzhledem k frekvenci operační paměti: 
+1(a) větší 
+0(b) menší 
+0(c) stejná 
+0(d) větší nebo menší podle potřeby
+
+Operační paměť je adresována po: 
+0(a) bitech 
+1(b) bytech 
+0(c) čtyřbytech
+0(d) kilobytech
+
+Původně pouze pro čtení jsou paměti: 
+1(a) ROM 
+0(b) SRAM 
+0(c) DRAM 
+0(d) cache
+
+Standard pro elektronické hudební nástroje je: 
+0(a) LFE 
+0(b) MPEG 
+0(c) PCM 
+1(d) MIDI
+
+Připojení/odpojení diskového zařízení za chodu (tzv. hot plug) umožňuje rozhraní/sběrnice: 
+0(a) IDE 
+0(b) EIDE 
+1(c) SATA 
+0(d) SCSI
+
+Paritní bity dat z více disků ukládá střídavě na všechny disky RAID: 
+0(a) 0 
+0(b) 1 
+0(c) 3 
+1(d) 5
+
+Průměr klasického optického disku (CD, DVD) je v cm (přibližně): 
+0(a) 8 
+1(b) 12 
+0(c) 15 
+0(d) 30
+ 
+Katodovou trubici (elektronku) používá technologie displeje: 
+1(a) CRT 
+0(b) LCD 
+0(c) plazmová 
+0(d) LED
+
+Tekuté krystaly používá technologie displeje: 
+0(a) CRT 
+1(b) LCD 
+0(c) plazmová 
+0(d) LED
+
+Zásadní (tvořící vlastní OS) je část operačního systému (OS): 
+1(a) jádro
+0(b) základní programy 
+0(c) uživatelské rozhraní 
+0(d) bootloader
+
+Víceúlohový není operační systém: 
+0(a) MS Windows 
+0(b) Mac OS X 
+0(c) GNU/Linux 
+1(d) MS DOS
+
+Způsob přenosu dat přímo mezi vstupně/výstupním zařízením a operační pamětí se označuje: 
+0(a) přerušení 
+1(b) DMA
+0(c) MOV
+0(d) Super I/O
+
+Počítač ENIAC používal číselnou soustavu o základu:
+0(a) 2
+0(b) 8
+1(c) 10
+0(d) 16
+
+Mikroprocesor se datuje od roku:
+0(a) 1960 
+1(b) 1970 
+0(c) 1980
+0(d) 1990
+
+Pro všechny typy dat v počítači se používá reprezentace:
+0(a) jakákoliv 
+0(b) symbolická 
+0(c) tabulková 
+1(d) binární
+
+Úplný systém log. funkcí netvoří:
+0(a) všechny log. funkce
+0(b) log. funkce, pomocí kterých lze vyjádřit jakoukoliv 
+0(c) všechny log. funkce dvou proměnných 
+1(d) všechny log. funkce jedné proměnné
+
+Úplný systém log. funkcí není:
+1(a) log. součet a součin 
+0(b) negace a log. součet
+0(c) Shefferova funkce 
+0(d) negace a implikace
+
+Log. obvod s jedním výstupem může realizovat:
+0(a) jednu konstantní log. funkci
+1(b) jednu lib. log. funkci
+0(c) lib. počet konstantních log. funkcí
+0(d) lib. počet lib. log. funkcí
+
+Kombinačním log. obvodem je:
+0(a) klopný obvod 
+1(b) bin. dekodér
+0(c) čítač 
+0(d) registr
+
+Záporná čísla jako log. negaci všech bitů zápisu absolutní hodnoty čísla ve dvojkové soustavě kóduje kód:
+0(a) přímý 
+0(b) aditivní 
+1(c) inverzní 
+0(d) doplňkový
+
+Rozšířená kódová tabulka ASCII obsahuje znaků:
+0(a) 127 
+0(b) 128 
+0(c) 255 
+1(d) 256
+
+Znaky všech abeced kóduje kódování:
+0(a) rozšířené ASCII 
+1(b) Unicode
+0(c) RSA 
+0(d) C
+
+V operačních systémech firmy Microsoft se používá/používají pro nový řádek znak/znaky:
+0(a) Carriage Return (CR), číslo D šestnáctkově 
+0(b) Line Feed (LF), číslo A šestnáctkově 
+1(c) CR+LF v tomto pořadí 
+0(d) LF+CR v tomto pořadí
+
+Kódy kontrolního součtu (checksum) nedetekují chyby:
+0(a) lichého počtu 
+0(b) přidání nenulového bloku dat 
+0(c) odebrání nenulového bloku dat 
+1(d) změny pořadí bloků dat
+
+Technické vybavení počítače se označuje slovem:
+1(a) hardware 
+0(b) software 
+0(c) firmware 
+0(d) warez
+
+Tzv. úplná instrukční sada procesoru se označuje:
+0(a) FISC 
+0(b) DISC 
+0(c) RISC 
+1(d) CISC 
+
+Matematický koprocesor se označuje:
+0(a) MPU 
+0(b) CPU 
+1(c) FPU 
+0(d) GPU
+
+Rysy instrukční sady RISC se poprvé objevují u procesoru Intel:
+1(a) 80486 
+0(b) Pentium 
+0(c) Pentium Pro 
+0(d) Core
+
+Paměti Flash jsou typu:
+0(a) PROM 
+1(b) EEPROM 
+0(c) SRAM 
+0(d) DRAM
+
+Rozhraním/sběrnicí pro disková zařízení není:
+0(a) IDE 
+0(b) SATA 
+0(c) SCSI 
+1(d) RAID
+
+Klasický pevný disk (HDD) používá způsob čtení/zápisu dat:
+0(a) mechanický 
+1(b) magnetický 
+0(c) elektronický 
+0(d) optický
+
+Přenosová rychlost CD disku je:
+0(a) desítky až stovky kB 
+1(b) stovky kB až jednotky MB 
+0(c) jednotky až desítky MB 
+0(d) stovky MB
+
+Opakovaně přepisovat je možné CD disky formátu:
+0(a) žádného 
+0(b) CD-ROM 
+0(c) CD-R 
+1(d) CD-RW
+
+Jako s pevným diskem je možné zacházet s DVD médiem:
+0(a) žádným 
+0(b) DVD-ROM 
+1(c) DVD-RAM 
+0(d) DVD-RW
+
+Svobodný (free) software je operační systém:
+1(a) GNU/Linux 
+0(b) MS Windows 
+0(c) Unix 
+0(d) Mac OS X
+
+Část virtuální paměti jinde než v operační paměti, typicky na pevném disku, se označuje jako:
+1(a) swapovací prostor 
+0(b) výpadek stránky 
+0(c) copy-on-write paměť 
+0(d) hard drive memory
+
+Za první všeobecně použitelný počítač se považuje počítač:
+0(a) Z-1
+0(b) MARK I
+1(c) ENIAC
+0(d) PDP-1
+
+Operační paměť von Neumannovy koncepce počítače není:
+0(a) přítomna
+0(b) přístupná pomocí adres
+0(c) lineárně organizovaná
+1(d) pouze pro data
+
+Harwardská koncepce počítače umožňuje narozdíl od von Neumannovy:
+1(a) paralelní přístup k paměti
+0(b) paralelní přístup k procesoru
+0(c) paralelní přístup k počítači
+0(d) paralelní přístup k uživateli
+
+Lib. přirozené číslo (včetně 0) lze vyjádřit jako součet mocninné řady o základu:
+0(a) >= 0
+0(b) >= 1
+1(c) >= 2
+0(d) žádném
+
+Logická operace/funkce nabývá hodnot:
+1(a) 0 nebo 1
+0(b) 0, 1 nebo žádné
+0(c) lib. číselných
+0(d) libovolných
+
+Binární logika pracuje s hodnotami:
+0(a) lib. číselnými
+1(b) 0 a 1
+0(c) libovolnými
+0(d) žádnými
+
+Log. součin (AND) je pravdivý, když oba operandy mají hodnotu:
+1(a) 1
+0(b) 0
+0(c) stejnou
+0(d) různou
+
+Log. operace ekvivalence je pravdivá, když oba operandy mají hodnotu:
+0(a) 1
+0(b) 0
+1(c) stejnou
+0(d) různou
+
+Log. operace jsou realizovány pomocí log.:
+0(a) procesorů
+0(b) počítačů
+1(c) hradel
+0(d) tranzistorů
+
+Stav na výstupu nezávisí na přechozích stavech na vstupech u log. obvodů:
+1(a) kombinačních
+0(b) sekvenčních
+0(c) všech
+0(d) žádných
+
+Log. hodnotu z datového vstupu na výstup přepíná na základě stavu adresního vstupu:
+0(a) komparátor
+1(b) multiplexor
+0(c) bin. dekodér
+0(d) klopný obvod
+
+Množina v počítači reprezentovaných celých čísel představuje:
+0(a) interval od nezáporného do kladného čísla
+1(b) interval od záporného do kladného čísla
+0(c) vybraná celá čísla
+0(d) kombinace předchozích
+
+(Dvojkový) doplňkový kód kóduje záporná čísla jako log. negaci všech bitů zápisu ve dvojkové soustavě absolutní hodnoty čísla:
+1(a) po odečtení 1
+0(b) po přičtení 1
+0(c) s odečtením 1
+0(d) nezměněné
+
+U reprezentace čísel s fixní řádovou čárkou je pevně zvolený max. počet platných (tj. reprezentovaných) číslic:
+0(a) všech
+0(b) před i za čárkou
+0(c) před čárkou
+1(d) za čárkou
+
+Vnitřní součásti počítače (bez zdroje) jsou pod napětím:
+0(a) 12 V a více střídavě
+0(b) 12 V a více stejnosměrně
+0(c) 12 V a méně střídavě
+1(d) 12 V a méně stejnosměrně
+
+Vnitřní sběrnicí na základní desce není:
+0(a) PCI
+1(b) USB
+0(c) AGP
+0(d) ISA
+
+Efektový procesor bývá součástí karty:
+0(a) grafické
+0(b) síťové
+0(c) televizní
+1(d) zvukové
+
+Součást klasického pevného disku (HDD), na kterou se zaznamenávají data, je:
+0(a) plošný spoj
+0(b) integrovaný obvod
+0(c) plastová páska
+1(d) keramický kotouč
+
+Analogové i digitální je rozhraní/konektor displeje:
+0(a) HDMI
+0(b) DisplayPort
+1(c) DVI
+0(d) VGA
+
+Poměr stran u grafického rozlišení označovaného jako širokoúhlé je:
+0(a) 5:4
+0(b) 4:3
+1(c) 16:9
+0(d) 2,35:1
+
+Spuštěný program se označuje jako:
+1(a) proces
+0(b) vlákno
+0(c) aplikace
+0(d) software
+
+Základní koncepce technického provedení počítače je odvozena od počítače:
+0(a) ENIAC
+0(b) Intel 8086
+1(c) IBM PC
+0(d) IBM System/360
+
+Autorem koncepce řízení počítače programem uloženým v paměti je:
+0(a) A. Turing
+0(b) C. Shannon
+0(c) H. Aiken
+1(d) J. von Neumann
+
+Děrné štítky se používaly v letech:
+0(a) dodnes
+0(b) 80.-2000
+1(c) 50.-70.
+0(d) 20.-40.
+
+1 byte ma velikost:
+1(a) 8 bitů
+0(b) 8 kilobitů
+0(c) 32 bitů
+0(d) 64 bitů
+
+Programovací jazyk C vznikl na přelomu let: 
+0(a) 60. a 70.
+1(b) 70. a 80.
+0(c) 80. a 90.
+0(d) 90. a 200X
+
+Jakoukoliv log. funkci lib. počtu proměnných lze vyjádřit pomocí log. funkcí proměnných počtu:
+0(a) 1
+1(b) 2
+0(c) 3
+0(d) pouze stejného
+
+Dvojkově desítkový kód (BCD) kóduje:
+0(a) číslo v desítkové soustavě do dvojkové soustavy
+0(b) číslo ve dvojkové soustavě do desítkové soustavy
+1(c) číslice čísla v desítkové soustavě do dvojkové soustavy
+0(d) číslice čísla ve dvojkové soustavě do desítkové soustavy
+
+POZOR:Odčítání pomocí sčítání se záporným číslem je přímo možné s celými čísly v kódu:
+0(a) přímém
+0(b) jedničkově doplňkovém
+1(c) dvojkově doplňkovém
+0(d) dvojkově desítkovém
+
+V reprezentaci čísel s fixní řádovou čárkou se pro základ B číselné soustavy reprezentace a počet n platných číslic za čárkou číslo ukládá:
+0(a) po vynásobení n^B
+0(b) po vydělení n^B
+1(c) po vynásobení B^n
+0(d) po vydělení B^n
+
+UTF-8 koduje do posloupností bytů délky):
+0(a) 1 až 2
+0(b) 1 až 4
+1(c) 1 až 6
+0(d) 1 až 8
+
+S ASCII je kompatibilní:
+1(a) UTF-8
+0(b) UTF-16
+0(c) UTF-32
+0(d) UTF-64
+
+Kód liché parity (paritní bit) je roven 1 pro:
+0(a) lichý počet 0 v datech
+0(b) lichý počet 1 v datech
+0(c) sudý počet 0 v datech
+1(d) sudý počet 1 v datech
+
+"Bitovost" sběrnice udává její část:
+0(a) adresová
+1(b) datová
+0(c) řídící
+0(d) všechny v součtu
+
+Řadič diskových zařízení obsahuje můstek čipsetu:
+0(a) žádný
+0(b) severní
+1(c) jižní
+0(d) oba
+
+Disketa (floppy, FDD) používá způsob čtení/zápisu dat:
+0(a) mechanický
+1(b) magnetický
+0(c) elektronický
+0(d) optický
+
+Kapacita běžného CD disku je (přibližně):
+0(a) jednotky MB
+1(b) stovky MB
+0(c) jednotky GB
+0(d) desítky GB
+
+Se zařízením pero, popř. tzv. puk, se používá:
+0(a) touchpad
+0(b) trackpoint
+0(c) trackball
+1(d) tablet
+
+Programy (součásti operačního systému) pro obsluhu a abstrakci vstupně/výstupních zařízení počítače se označují jako:
+0(a) obslužné utility
+0(b) administrační nástroje
+0(c) firmware
+1(d) ovladače zařízení
+
+Počítač ENIAC neobsahoval:
+0(a) relé
+0(b) elektronky
+0(c) přepínače
+1(d) tranzistory
+
+Integrovaný obvod se datuje od roku:
+0(a) 1949
+1(b) 1959
+0(c) 1969
+0(d) 1979
+
+von Neumannova koncepce počítače neobsahuje:
+1(a) skříň
+0(b) operační paměť
+0(c) vstupně/výstupní zařízení
+0(d) sběrnici
+
+Disjunkce je:
+0(a) log. součin
+1(b) log. součet
+0(c) ekvivalence
+0(d) shoda
+
+Log. součet (OR) a součin (AND) nejsou:
+0(a) komutativní
+0(b) asociativní
+0(c) idempotentní
+1(d) inverzní
+
+Vlastnost absorpce znamená (+ = log. součet, * = log. součin):
+0(a) x + y = y + x
+0(b) x * (y + z) = x * y + x * z
+0(c) x + (y + z) = (x + y) + z
+1(d) x * (x + y) = x
+
+Lib. log. obvod lze realizovat pomocí pouze hradel:
+0(a) OR
+1(b) NOR
+0(c) XOR
+0(d) XNOR
+
+n-bitový log. obvod je log. obvod s:
+0(a) alespoň n vstupy
+1(b) n-ticemi vstupů
+0(c) alespoň n výstupy
+0(d) n-ticemi výstupů
+
+Předchozí hodnoty na vstupech sekvenčního log. obvodu jsou zachyceny:
+0(a) krystalem v obvodu
+0(b) zapojením obvodu
+1(c) aktuálním stavem obvodu
+0(d) pamětí obvodu
+
+Synchronně řízený log. obvod je řízen signálem:
+1(a) hodinovým
+0(b) na datových vstupech
+0(c) na datových výstupech
+0(d) náhodným
+
+Jako paměť hodnoty dodané na vstupu slouží log. obvod:
+0(a) bin. dekodér
+1(b) registr
+0(c) čítač
+0(d) multiplexor
+
+Doplňkový kód kóduje nezáporná čísla:
+1(a) přímým kódem
+0(b) aditivním kódem s nenulovou konstantou
+0(c) stejně jako záporná
+0(d) nijak
+
+Reprezentace čísel s plovoucí řádovou čárkou používá aritmetiku:
+0(a) pro celá čísla
+0(b) pro racionální čísla
+0(c) pro reprezentaci čísel s fixní řádovou čárkou
+1(d) vlastní
+
+Kódování Unicode obsahuje z kódování ASCII:
+1(a) všechno
+0(b) většinu
+0(c) menšinu
+0(d) nic
+
+Nezávislé na "endianitě" systémů je vícebajtové kódování:
+0(a) ASCII
+1(b) UTF-8
+0(c) UTF-16
+0(d) UTF-32
+
+V unixových operačních systémech se používá/používají pro nový řádek znak/znaky:
+0(a) Carriage Return (CR), číslo D šestnáctkově
+1(b) Line Feed (LF), číslo A šestnáctkově
+0(c) CR+LF v tomto pořadí
+0(d) LF+CR v tomto pořadí
+
+Kód liché parity (paritní bit) je roven 0 pro:
+0(a) lichý počet 0 v datech
+1(b) lichý počet 1 v datech
+0(c) sudý počet 0 v datech
+0(d) sudý počet 1 v datech
+
+Samoopravným kódem je kód:
+0(a) parity
+1(b) Hammingův
+0(c) kontrolního součtu
+0(d) CRC
+
+BIOS je:
+0(a) hardware
+0(b) software
+1(c) firmware
+0(d) počítač
+
+Stav, když požadovaná data nejsou v cache, se označuje:
+0(a) cache hit
+0(b) cachefault
+1(c) cache miss
+0(d) cacheloss
+
+Obrazový výstup počítače zprostředkovává přídavná karta:
+0(a) zvuková
+1(b) grafická
+0(c) multimediální
+0(d) síťová
+
+Přenosová rychlost DVD disku je:
+0(a) desítky až stovky kB
+0(b) stovky kB až jednotky MB
+1(c) jednotky až desítky MB
+0(d) stovky MB
+
+Na běžné klávesnici je kláves (přibližně):
+0(a) 60 až 90
+1(b) 90 až 120
+0(c) 120 až 150
+0(d) více než 150
+
+Maximální přenosová rychlost sběrnice USB 2.0 je (zhruba):
+0(a) jednotky Mb/s
+0(b) desítky Mb/s
+1(c) stovky Mb/s
+0(d) jednotky Gb/s
+
+Z jednoho programovacího jazyka do jiného přepisuje kód programu:
+0(a) přepisovač
+0(b) programovač
+1(c) překladač
+0(d) interpret
+
+Přepnutí spuštěného programu na jiný po vypršení jeho časového kvanta je v tzv. preemptivních systémech zařízeno:
+0(a) přerušením programu uživatelem
+0(b) voláním systémové služby pro odevzdání procesoru programem
+1(c) přerušením procesoru od časovače
+0(d) přerušením vykonávání programu procesorem
+
+Program používá při přístupu do paměti adresu:
+0(a) fyzickou
+0(b) lineární
+1(c) logickou
+0(d) virtuální
+
+Část prostoru na disku, ve které se vytváří souborový systém, se označuje jako:
+0(a) diskový prostor
+0(b) souborový systém
+1(c) oddíl/particie
+0(d) žurnál
+
+Vlastnost asociativita znamená (+ = log. součet, * = log. součin):
+0(a) x + y = y + x
+0(b) x * (y + z) = x * y + x * z
+1(c) x + (y + z) = (x + y) + z
+0(d) x * (x + y) = x
+
+Úplná disjunktivní normální forma log. výrazu je všech log. proměnných nebo jejich negací logický:
+0(a) součet součtů
+1(b) součet součinů
+0(c) součin součtů
+0(d) součin součinů
+
+POZOR:Logické obvody neobsahují:
+1(a) přepínače
+0(b) rezistory
+0(c) tranzistory
+0(d) integrované obvody
+
+Výstup log. obvodů reprezentuje log.:
+1(a) výsledek funkce
+0(b) operace
+0(c) hodnoty
+0(d) proměnné
+
+Kombinačním log. obvodem je:
+0(a) klopný obvod
+0(b) čítač
+0(c) registr
+1(d) multiplexor
+
+Řízení sekvenčního log. obvodu nebývá řešeno:
+0(a) úrovní signálu
+0(b) hranou signálu
+0(c) periodou signálu
+1(d) prezencí signálu
+
+Množina v počítači reprezentovaných čísel s řádovou čárkou představuje:
+1(a) interval racionálních čísel
+0(b) vybraná racionální čísla
+0(c) vybraná irracionální čísla
+0(d) interval reálných čísel
+
+Formát double reprezentace čísla s plovoucí řádovou čárkou podle normy IEEE 754 má bitů:
+0(a) 16
+0(b) 32
+1(c) 64
+0(d) 128
+
+Znaky české abecedy (jejich čísla) jsou kódováním UTF-16 kódovány do bytů počtu:
+0(a) 1
+0(b) 1 nebo 2
+1(c) 2
+0(d) 1 až 3
+
+Samoopravné kódy slouží při přenosu dat k:
+1(a) opravě chyb vzniklých během přenosu
+0(b) opravě kódování dat při jejich odesílání
+0(c) opravě dekódování dat při jeji příjmu
+0(d) opravě přenosu dat
+
+K systémové sběrnici (tzv. front side bus) je připojen můstek čipsetu:
+0(a) žádný
+1(b) severní
+0(c) jižní
+0(d) oba
+
+Periodicky obnovovat uložená data je potřeba u pamětí:
+0(a) ROM
+0(b) SRAM
+1(c) DRAM
+0(d) cache
+
+Pro realizaci operačních pamětí se (nejčastěji) používají paměti:
+0(a) PROM
+0(b) Flash
+0(c) SRAM
+1(d) DRAM
+
+Sektor na pevném disku má typicky velikost:
+1(a) 4 kB
+0(b) 512 kB
+0(c) 4 MB
+0(d) 512 MB
+
+Zřetězení/prokládání dat na více pevných disků provádí RAID:
+1(a) 0
+0(b) 1
+0(c) 3
+0(d) 5
+
+Na běžné klávesnici je kláves (přibližně):
+0(a) 60 až 90
+1(b) 90 až 120
+0(c) 120 až 150
+0(d) více než 150
+
+Sběrnice USB používá topologii propojených zařízení:
+0(a) hvězdicovou
+0(b) kruhovou
+0(c) polygonální
+1(d) stromovou
+
+Operační systém (na PC) je:
+0(a) hardware
+1(b) software
+0(c) firmware
+0(d) warez
+
+Vznik operačního systému Unix se datuje do let:
+0(a) konec 50.
+1(b) konec 60.
+0(c) konec 70.
+0(d) konec 80.
+
+přidělování procesoru spuštěným programům (jejich přepínání) se stará část (jádra) operačního systému zvaná:
+0(a) alokátor
+0(b) přepínač
+0(c) přidělovač
+1(d) plánovač
+
+Počítače Apple Macintosh se datují od roku:
+0(a) 1974
+1(b) 1984
+0(c) 1994
+0(d) 2004
+
+Pořadí vykonávání instrukcí dle von Neumannovy koncepce počítače je (až na výjimky):
+1(a) sekvenční
+0(b) po blocích
+0(c) určeno každou instrukcí
+0(d) nedefinované
+
+Vlastnost distributivita znamená (+ = log. součet, * = log. součin):
+0(a) x + y = y + x
+1(b) x * (y + z) = x * y + x * z
+0(c) x + (y + z) = (x + y) + z
+0(d) x * (x + y) = x
+
+Na log. hodnotu 1 nastaví jeden z výstupů odpovídající hodnotě na vstupu:
+0(a) komparátor
+0(b) multiplexor
+1(c) bin. dekodér
+0(d) klopný obvod
+
+Mezi alfanumerické znaky se neřadí: 
+0(a) písmena
+0(b) cifry
+0(c) matematické symboly
+1(d) řídící symboly
+
+V reprezentaci čísel s fixní řádovou čárkou jsou čísla reprezentována: 
+0(a) jako zlomky
+0(b) v semilogaritmickém tvaru
+1(c) jako celá čísla
+0(d) jako v reprezentaci čísel s plovoucí řádovou čárkou
+
+Formát single (float) reprezentace čísla s plovoucí řádovou čárkou podle normy IEEE 754 má bitů: 
+0(a) 16
+1(b) 32
+0(c) 64
+0(d) 128
+
+Všechny znaky české abecedy neobsahuje rozšířená kódová tabulka ASCII: 
+1(a) ISO 8859-1 (ISO Latin 1)
+0(b) ISO 8859-2 (ISO Latin 2)
+0(c) Windows 1250
+0(d) Mac CE
+
+Tzv. escape sekvence jsou posloupnosti znaků: 
+0(a) ESC, číslo 1B šestnáctkově
+1(b) s prvním znakem ESC a ostatními lib. z ASCII
+0(c) s posledním znakem ESC a ostatními lib. z ASCII
+0(d) s prvním a posledním znakem ESC a ostatními lib. z ASCII
+
+Při detekčním nebo samoopravném kódování dat příjemce testuje: 
+0(a) přijaté bity kódu na 0
+0(b) dekódované přijaté bity kódu na 0
+1(c) z přijatých datových i kódových bitů vypočtený kód na 0
+0(d) z přijatých datových a dekódovaných bitů kódu vypočtený kód na 0
+
+Kód sudé parity (paritní bit) je roven 0 pro: 
+0(a) lichý počet 0 v datech
+0(b) lichý počet 1 v datech
+0(c) sudý počet 0 v datech
+1(d) sudý počet 1 v datech
+
+Sběrnice (bus), např. na základní desce, je:
+0(a) diskové zařízení
+0(b) paměťový čip
+0(c) periferie
+1(d) soustava vodičů
+
+Sběrnice (bus), např. na základní desce, je:
+0(a) diskové zařízení
+0(b) paměťový čip
+0(c) periferie
+1(d) soustava vodičů
+
+Digitalizace analogového signálu zvuku se provádí pomocí:
+1(a) vzorkování
+0(b) krokování
+0(c) snímání
+0(d) syntézování
+
+U klávesnice se nepoužívá (a nepoužíval) konektor/rozhraní/sběrnice: 
+1(a) paralelní
+0(b) DIN-5
+0(c) PS/2
+0(d) USB
+
+Počítače IBM PC se datují od roku: 
+0(a) 1961
+0(b) 1971
+1(c) 1981
+0(d) 1991
+
+Integrovaný obvod se datuje od roku: 
+0(a) 1949
+1(b) 1959
+0(c) 1969
+0(d) 1979
+
+Mikropočítače Sinclair ZX 80, Commodore C64, ZX Spectrum, Atari ST apod. se datují do let: 
+0(a) 60.
+0(b) 70.
+1(c) 80.
+0(d) 90.
+
+Program dle von Neumannovy koncepce počítače je: 
+0(a) nabídka služeb
+1(b) posloupnost instrukcí
+0(c) televizní stanice
+0(d) nic
+
+Činnost počítače dle von Neumannovy koncepce počítače řídí: 
+1(a) řadič
+0(b) řidič
+0(c) vodič
+0(d) von Neumann
+
+Elektronika digitálních zařízení je realizovaná stabilními stavy: 
+0(a) žádnými
+0(b) jedním
+1(c) dvěma
+0(d) deseti
+
+Soudobé počítače používají interně poziční číselnou soustavu: 
+0(a) desítkovou
+1(b) dvojkovou
+0(c) šestnáctkovou
+0(d) šedesátkovou
+
+Log. funkce jsou realizovány pomocí: 
+0(a) analogových obvodů
+1(b) logických obvodů
+0(c) logických schémat
+0(d) úrovní el. napětí
+
+Hodnoty stavů na vstupech/výstupech log. obvodů reprezentují čísla: 
+0(a) lib. reálná
+0(b) lib. celá
+0(c) 1 a -1
+1(d) 1 a 0
+
+Lib. log. obvod lze realizovat pomocí pouze hradel: 
+1(a) NAND
+0(b) AND
+0(c) XOR
+0(d) NOT
+
+Stav na výstupu nezávisí na budoucích stavech na vstupech u log. obvodů: 
+1(a) kombinačních
+0(b) sekvenčních
+0(c) všech
+0(d) žádných
+
+Srovnání dvou hodnot na vstupech provádí: 
+1(a) komparátor
+0(b) multiplexor
+0(c) bin. dekodér
+0(d) klopný obvod
+
+Monostabilní klopné obvody mají stabilní stav(y): 
+0(a) žádné
+1(b) 1
+0(c) 2
+0(d) více než 2
+
+Používaná vzorkovací frekvence při digitalizaci analogového signálu zvuku je v desítkách: 
+0(a) Hz
+1(b) kHz
+0(c) MHz
+0(d) GHz
+
+Paměť Boot ROM na síťové kartě slouží k: 
+0(a) připojení počítače do sítě
+0(b) zapnutí počítače ze sítě
+1(c) zavedení operačního systému ze sítě
+0(d) monitorování počítače ze sítě
+
+K jednomu rozhraní IDE je možné připojit diskových zařízení: 
+0(a) 1
+0(b) 2
+1(c) 4
+0(d) 7
+
+Paralelní rozhraní/port používá konektor: 
+0(a) VGA15
+0(b) Cannon 9
+1(c) Cannon 25
+0(d) PS/2
+
+Vyřízení požadavku na vstupně/výstupní zařízení ze strany procesoru je řešeno: 
+0(a) čekáním procesoru
+0(b) periodickým testování procesoru
+1(c) přerušením procesoru
+0(d) zastavením procesoru
+
+Rozdělení paměti programu na kousky a jejich mapování do operační paměti se označuje jako: 
+0(a) segmentace
+1(b) stránkování
+0(c) fragmentace
+0(d) virtuální paměť
+
+Problém označovaný jako tzv. von Neumann bottleneck řeší:
+0(a) aspirin
+0(b) nic
+1(c) cache
+0(d) procesor
+
+POZOR: Log. obvody nerealizují log.:
+1(a) proměnné
+0(b) operace
+0(c) funkce
+0(d) algery
+
+U sekvenčních log. obvodů nezávisí stavy na výstupech na stavech:
+1(a) předchozích na vstupech
+0(b) okamžitých na vstupech
+0(c) předchozích na výstupech
+0(d) okamžitých na výstupech
+
+Při sériovém přenosu jsou bity přenášeny:
+1(a) postupně v čase za sebou po jednom dat. vodiči 
+0(b) postupně v čase za sebou po více dat. vodičích
+0(c) zároveň v čase po jednom dat. vodiči
+0(d) zároveň v čase po více dat. vodičích
+
+Doplňkový kód kóduje nezáporná čísla:
+1(a) přímým kódem
+0(b) aditivním kódem s nenulovou konstantou
+0(c) stejně jako záporná
+0(d) nijak
+
+Kódy pro znaky anglické abecedy (latinky) netvoří interval v kódování:
+0(a) původním ASCII
+0(b) rozšířeném ASCII
+0(c) UTF
+1(d) EBCDIC
+
+První 32-bitový procesor Itel je:
+0(a) 80286
+1(b) 80386
+0(c) 80486
+0(d) Pentium
+
+HyperThreading u procesoru znamená:
+0(a) dva procesory
+0(b) dvě jádra
+1(c) simulace dvou procesorů
+0(d) dvě ALU
+
+Zrcadlení obsahu dvou disků provádí RAID:
+0(a) 0
+1(b) 1
+0(c) 3
+0(d) 5
