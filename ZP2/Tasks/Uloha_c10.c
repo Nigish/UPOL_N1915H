@@ -1,11 +1,3 @@
-//
-//  Uloha_c10.c
-//  Viet_TH_UPOL
-//
-//  Created by Viet Tran Hoang on 19.04.16.
-//  Copyright © 2016 Viet Tran Hoang. All rights reserved.
-//
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>

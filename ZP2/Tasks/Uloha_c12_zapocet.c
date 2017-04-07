@@ -1,11 +1,3 @@
-//
-//  Uloha_c12_zapocet.c
-//  Viet_TH_UPOL
-//
-//  Created by Viet Tran Hoang on 03.05.16.
-//  Copyright © 2016 Viet Tran Hoang. All rights reserved.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
