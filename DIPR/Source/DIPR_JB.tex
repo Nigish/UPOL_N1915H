@@ -1,0 +1,372 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\newtheorem{definition}{Definice}
+\usepackage[font=footnotesize]{subcaption}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{citecolor=black}
+\hypersetup{linkcolor=black}
+\hypersetup{urlcolor=blue}
+
+\newcommand{\inlinecode}{\texttt}
+
+\title{Naučte se \LaTeX{} za večer}
+\author{Jakub Kadlčík}
+\date{9. 11. 2013}
+
+\begin{document}
+	\pagenumbering{gobble} 
+	\maketitle
+	\newpage
+
+	\section*{Předmluva}
+	Tento dokument je určen každému, kdo se chce s co nejmenší námahou naučit používat typografický systém LaTeX. Nepředpokládá téměř žádné dovednosti, takže nezáleží na tom, zda jste žákem základní školy, studentem, který právě zjistil, že LaTeX není materiál pro výrobu kondomů a má v něm do konce týdne napsat práci, nebo důchodce, který chce, aby jeho písemné stížnosti vypadaly úhledně.
+	\\
+	Přesto je tento dokument mířený na určitou cílovou skupinu lidí --- na ty, kteří se chtějí naučit stěžejní věci v co nejkratším možném čase, aby mohli v LaTeXu psát pokud možno ihned a jsou ochotni si pokročilejší věci najít jinde.
+
+	\newpage
+	\tableofcontents
+	\newpage	
+	\pagenumbering{arabic}
+	\setcounter{page}{4}
+    \part{LaTeX?}
+		\section{Úvod}
+		Mluvíme-li o LaTeXu myslíme tím typografický systém sloužící k profesionální sazbě textů. Hlavním rozdílem mezi ním a textovými procesory, jakými jsou například MS Word, nebo OpenOffice Writer je ten, že dokument LaTeXu needitujete v takové podobě, v jaké bude tištěn. Pro formátování textu se používají různé příkazy a symboly --- dal by se tak přirovnat například k jazyku HTML.
+
+		\section{Historie}
+		Většina knih začíná mnoha stranami popisujícími detailní historii projektu. Znalost historie je zajisté důležitá, ale pokud chceme rychle začít něco dělat, je nám k ničemu. Zmínil bych jen základní fakta. LaTeX je sada maker pro systém TeX, který v 70. letech 20. století vytvořil profesor D. E. Knuth. Nebyl moc spokojený s tím, jak nakladatelství na  Stanfordově univerzitě sázelo jeho skripta do matematiky.
+
+	\newpage
+	\part{Instalace}
+		LaTeX je k dispozici v různých distribucích. Tou nejrozšířenější je TeX Live\footnote{\url{http://www.tug.org/texlive/}}. Nemusíte mít obavy, zda na vašem počítači bude fungovat. Podporuje totiž mnoho operačních systémů a architektur\footnote{\url{http://www.tug.org/texlive/doc.html}}.
+		\\
+		TeX Live vám sice umožní překlad zdrojových souborů na PDF dokumenty, ale o uživatelské přívětivosti nelze ani hovořit. Proto na scénu přichází Texmaker\footnote{\url{http://www.xm1math.net/texmaker/}}.
+
+		\section{Linux}
+		Jsem přesvědčen, že v každé rozumné linuxové distribuci stačí nainstalovat program Texmaker a díky závislostem se vám do systému dostane vše co k psaní v LaTeXu potřebujete. To je přece to, co na linuxu milujeme.
+
+		\section{Windows a ostatní systémy}
+		Pro instalaci distribuce TeX Live následujte \url{http://www.tug.org/texlive/doc.html}. Pro instalaci Texmakeru potom \url{http://www.xm1math.net/texmaker/download.html}.
+
+
+	\newpage
+	\part{Jedeme na to}
+		V případě, že nejste příliš zdatní v českém jazyce, přečtěte si bonusovou kapitolu číslo \ref{typografie}, pojednávající o české typografii. Vlastně, \dots{} Podívejte se tam raději všichni.
+
+		\section{Dokument v LaTeXu}
+		Jak jsem předeslal již v úvodu, soubor, se kterým člověk pracuje, vypadá jinak než výstupní soubor, který LaTeX vrací. Zdrojový kód je tedy kombinace formátovacích příkazů a textu. Tohle je naprosto stěžejní informace, pro jejíž ujasnění doporučuji srovnání tohoto dokumentu a jeho zdrojového kódu, který naleznete na adrese \url{http://frostyx.cz/posts/naucte-se-latex-za-vecer}.
+		\\
+		Teď už se pusťme do samotné tvorby zdrojového kódu.
+		\section{Základní kostra dokumentu}
+			Každý dokument psaný v LaTeXu musí obsahovat hlavičku (preambuli) a samotný text. Vždy když vytváříte nový dokument, automaticky do něj vložte následující kód:
+
+			\begin{verbatim}
+			\documentclass[10pt,a4paper]{article}
+			\usepackage[utf8]{inputenc}
+			\usepackage[T1]{fontenc}
+
+			\begin{document}
+			    Hello world
+			\end{document}
+			\end{verbatim}
+
+			Obsah bloku ohraničeného příkazy \inlinecode{\textbackslash{}begin\{document\}} a \inlinecode{\textbackslash{}end\{document\}} je text výsledného dokumentu. Kód nad tímto blokem se nazývá hlavička. Ta slouží k nastavení velikosti papíru, kódování znaků, jazyku, atd.
+
+			\subsection{Čeština}
+			Při psaní českého dokumentu budete chtít, aby LaTeX zohledňoval české typografické speciality. Toho docílíte přidáním následujícího řádku do hlavičky.
+
+			\begin{verbatim}
+			\usepackage[czech]{babel}
+			\end{verbatim}
+
+
+		\section{Speciální znaky}
+		Jak už jste si mohli všimnout, příkazy LaTeXu se skládají ze znaků \texttt{\textbackslash{}, \{, \}}, proto není možné je do textu jen tak zapsat, aby se nevyhodnotily na příkaz. Speciálních znaků však existuje mnohem více\footnote{Spoustu symbolů lze najít na \url{http://latex.wikia.com/wiki/List_of_LaTeX_symbols}. Pro případ, kdy chcete zapsat symbol, pro nějž neznáte příkaz, jistě se vám bude hodit stránka \url{http://detexify.kirelabs.org/classify.html}.} než jen tyto tři. Následující tabulka ukáže, jak je psát.
+		\\
+		\\
+		\begin{tabular}{|p{4cm}|p{4cm}|}
+			\hline
+			\textbf{Znak}  & \textbf{Příkaz} \\ \hline
+			\textbackslash & \textbackslash{}textbackslash \\ \hline
+			\{             & \textbackslash\{ \\ \hline
+			\}             & \textbackslash\} \\ \hline
+			\#             & \textbackslash\# \\ \hline
+			\$             & \textbackslash\$ \\ \hline
+			\&             & \textbackslash\& \\ \hline
+			\_             & \textbackslash\_ \\ \hline
+			\%             & \textbackslash\% \\ \hline
+		\end{tabular}
+
+
+		\section{Strukturování textu}
+			S psaním delších textů ruku v ruce přichází nutnost je členit na kapitoly, podkapitoly, odstavce, atd. Tedy je strukturovat. S klidem v srdci můžu říct, že v tomhle LaTeX sráží konkurenty na kolena.
+
+			\paragraph{Kapitoly a odstavce}
+				jsou řešeny pomocí několika málo příkazů.
+				\\\\
+				\begin{tabular}{|p{5cm}|p{6cm}|}
+					\hline
+					\textbackslash{}part             & Nová část \\ \hline
+					\textbackslash{}section          & Nová sekce \\ \hline
+					\textbackslash{}subsection       & Podsekce prvního řádu \\ \hline
+					\textbackslash{}subsubsection    & Podsekce druhého řádu \\ \hline
+					\textbackslash{}paragraph        & Nový odstavec \\ \hline
+					\textbackslash{}subparagraph     & Nový pod-odstavec \\ \hline
+					\textbackslash{}newpage          & Nová stránka \\ \hline
+					\textbackslash{}\textbackslash{} & Nový řádek \\ \hline
+				\end{tabular}
+				\\\\
+				Pomineme-li na okamžik poslední dva příkazy, pak každý z výše uvedených bere jako povinný argument název sekce -- například \texttt{\textbackslash{}section\{Úvod\}}. Navíc každý z nich existuje i ve variantě s hvězdičkou -- například \texttt{\textbackslash{}section*\{Úvod\}}. Taková sekce se potom nezobrazí v obsahu.
+
+			\subsection{Odkaz na místo v textu}
+			Libovolnou část dokumentu si můžeme označit příkazem \texttt{\textbackslash{}label\{návěští\}}. Poté se na místo můžeme odkázat dvěma způsoby. \texttt{\textbackslash{}ref\{návěští\}} vypíše číslo kapitoly a \texttt{\textbackslash{}pageref\{návěští\}} vypíše číslo stránky, kde se nachází odkazovaný text.
+
+			\subsection{Obsah}
+			Už žádné ruční psaní obsahu, nebo používání magie při jeho generování. Nikdy, nikdy, nikdy. Prostě použijte příkaz \texttt{\textbackslash{}tableofcontents}.
+
+		\section{Písmo}
+			\label{pismo}
+			Následující tabulka osvětlí, jak lze měnit formát písma.
+			\\\\
+			\begin{tabular}{|p{4cm}|p{5cm}|}
+				\hline
+				\texttt{\textbackslash{}textit} & \textit{kurzíva - italic} \\ \hline
+				\texttt{\textbackslash{}textsf} & \textsf{skloněné - slanted} \\ \hline
+				\texttt{\textbackslash{}texttt} & \texttt{strojopisné - typewritter} \\ \hline
+				\texttt{\textbackslash{}textbf} & \textbf{tučné - bold face} \\ \hline
+				\texttt{\textbackslash{}textsc} & \textsc{kapitálky - small caps} \\ \hline
+			\end{tabular}
+			\\\\
+			Následující výčet ukáže, jak lze měnit jeho velikost (výčet je seřazen od nejmenšího po největší).
+
+		\begin{itemize}
+			\item \texttt{\textbackslash{}tiny}
+			\item \texttt{\textbackslash{}scriptsize}
+			\item \texttt{\textbackslash{}footnotesize}
+			\item \texttt{\textbackslash{}small}
+			\item \texttt{\textbackslash{}normalsize}
+			\item \texttt{\textbackslash{}large}
+			\item \texttt{\textbackslash{}Large}
+			\item \texttt{\textbackslash{}LARGE}
+			\item \texttt{\textbackslash{}huge}
+			\item \texttt{\textbackslash{}Huge}
+			\item \texttt{\textbackslash{}HUGE}
+		\end{itemize}
+
+		Jak můžete vidět, mnoho názvů příkazů LaTeXu je velmi intuitivních.
+
+		\newpage
+		\section{Seznamy}
+		Řekne-li se seznam (případně výčet), nejspíš ne úplně každý bude mít jasnou představu, o čem je řeč. Při čtení zdrojového kódu tohoto dokumentu jste si mohli seznamu všimnout například v kapitole č.\ref{pismo}, pojednávající o písmech.
+		\\
+		Seznam může být číslovaný, \uv{odrážkovaný}, nebo uvozený libovolným znakem. Každý z nich může obsahovat libovolně mnoho podseznamů. Teorie by stačila, teď si je ukážeme.
+
+		\subsection{\uv{Odrážkovaný} seznam}
+			\begin{figure}[!ht]
+				\centering
+				\begin{subfigure}{.45\textwidth}
+					\centering
+					\begin{verbatim}
+						\begin{itemize}
+						    \item První položka
+						    \item Druhá položka
+						    \begin{itemize}
+							\item A
+							\item B
+						    \end{itemize}
+						    \item Třetí položka
+						\end{itemize}
+					\end{verbatim}
+				\end{subfigure}
+				\vline
+				\begin{subfigure}{.45\textwidth}
+					\centering
+					\begin{itemize}
+						\item První položka
+						\item Druhá položka
+							\begin{itemize}
+								\item A
+								\item B
+							\end{itemize}
+						\item Třetí položka
+					\end{itemize}
+				\end{subfigure}
+			\end{figure}
+
+		\subsection{Číslovaný seznam}
+			\begin{figure}[!ht]
+				\centering
+				\begin{subfigure}{.45\textwidth}
+					\centering
+					\begin{verbatim}
+						\begin{enumerate}
+						    \item První položka
+						    \item Druhá položka
+						    \begin{itemize}
+							\item A
+							\item B
+						    \end{enumerate}
+						    \item Třetí položka
+						\end{itemize}
+					\end{verbatim}
+				\end{subfigure}
+				\vline
+				\begin{subfigure}{.45\textwidth}
+					\centering
+					\begin{enumerate}
+						\item První položka
+						\item Druhá položka
+							\begin{itemize}
+								\item A
+								\item B
+							\end{itemize}
+						\item Třetí položka
+					\end{enumerate}
+				\end{subfigure}
+			\end{figure}
+
+		Nehledě na to, jaký typ seznamu se použije, jeho body vždy začínají příkazem \texttt{\textbackslash{}item}, takže změnit typ seznamu není vůbec komplikované. Navíc můžete vidět, že není problém udělat číslovaný seznam, který bude obsahovat \uv{odrážkovaný} podseznam.
+
+		\newpage
+		\section{Tabulky}
+		Nemůžu říci, že se v LaTeXu vytvářejí tabulky tak jednoduše, jako v MS Word, nebo OpenOffice Writer, ale i tak se nejedná o nic složitého.
+
+			\begin{figure}[!ht]
+				\centering
+				\begin{subfigure}{.45\textwidth}
+					\centering
+					\begin{verbatim}
+						\begin{tabular}{|c|c|}
+						    \hline
+						    AAA & BBB \\\hline
+						    CCC & DDD \\\hline
+						    EEE & FFF \\\hline
+						    GGG & HHH \\\hline
+						\end{tabular}
+					\end{verbatim}
+				\end{subfigure}
+				\vline
+				\begin{subfigure}{.45\textwidth}
+					\centering
+					\begin{tabular}{|c|c|}
+						\hline
+						AAA & BBB \\\hline
+						CCC & DDD \\\hline
+						EEE & FFF \\\hline
+						GGG & HHH \\\hline
+					\end{tabular}
+				\end{subfigure}
+			\end{figure}
+
+			Můžete vidět, že tabulku reprezentuje prostředí \texttt{tabular}, který přebírá jeden povinný argument. Pojďme si ho teď objasnit. Znak \texttt{|} reprezentuje, kde budou v tabulce svislé \uv{čáry}. Písmena mezi nimi reprezentují počet sloupců a zarovnání textu v nich. Lze použít \texttt{l} - zarovnání vlevo, \texttt{r} - zarovnání vpravo, \texttt{c} - zarovnání na střed.
+			\\
+			Nový řádek tabulky není uvozen žádným příkazem, jak je tomu u seznamů, naopak na konec každého řádku je potřeba napsat \texttt{\textbackslash{}\textbackslash}. Vodorovné \uv{čáry} za nás LaTeX bohužel taky sám nevypíše. Musíme to udělat příkazem \texttt{\textbackslash{}hline}.
+			\\ A konečně znak \texttt{\&}. Určitě vám došlo, že odděluje sloupce.
+
+
+		\section{Obrázky}
+			O vykreslování obrázků se v LaTeXu stará balíček \texttt{graphicx}, proto jej nejdříve v hlavičce načteme -- \texttt{\textbackslash{}usepackage\{graphicx\}}.
+			\\
+			Vložení obrázku do textu není příliš těžké. Nejjednodušší způsob jak toho docílit může být příkaz \texttt{\textbackslash{}includegraphics\{obrazek.png\}}. Můžeme také specifikovat vlastnosti jako velikost, nebo úhel.
+			
+			\begin{verbatim}
+				\includegraphics[scale=1.5, angle=-40]{obrazek.png}
+			\end{verbatim}				
+		
+
+
+		\section{Matematika}
+			Matematika -- důvod, proč LaTeX vznikl. Taky vlastnost, ve které bezkonkurenčně a nelítostně likviduje všechny své konkurenty. My si ukážeme pouze pár základních věcí, protože chceme tento dokument co nejkratší (v opačném případě by postrádal smysl a vy si rovnou můžete přečíst knihu). Zájemce o více matematiky bych rád odkázal zde \url{http://en.wikibooks.org/wiki/LaTeX/Mathematics}.
+			\\
+			\\
+			Matematické prostředí lze spustit několika způsoby. Ukážeme si je na předpisu lineární funkce:
+			\begin{enumerate}
+				\item \texttt{\$f(x) = ax + b\$}
+				\item \texttt{\$\$f(x) = ax + b\$\$	}
+				\item \texttt{\textbackslash{}begin\{equation\} f(x) = ax + b \textbackslash{}end\{equation\}}
+			\end{enumerate}
+
+			Každá ze zmíněných možností vloží vzoreček jinak. První se hodí, když jej chceme vložit do textu, protože přesně to se stane. Například chci říci, že \uv{$f(x) = ax + y$ je předpis lineární funkce}. Druhá možnost vypíše vzoreček na samostatném řádku, třetí jej navíc očísluje.
+
+			\subsection{Mocniny a odmocniny}
+				Na následující rovnici si ukážeme, jak psát mocniny a odmocniny:
+				$$2^2 + 2^{2+1} = 8 + \sqrt[3]{8} + \sqrt{4}$$
+				Vstup: \texttt{\$\$2\^{}2 + 2\^{}\{2+1\} = 8 + \textbackslash{}sqrt[3]\{8\} + \textbackslash{}sqrt\{4\}\$\$}
+
+			\subsection{Indexy}
+				Indexy si můžeme ukázat na řadě:
+				$$x_1 + x_2 + x_3 + \dots + x_{n-2} + x_{n-1} + x_n $$
+				Vstup: \texttt{\$\$x\_1 + x\_2 + x\_3 + \textbackslash{}dots + x\_\{n-2\} + x\_\{n-1\} + x\_n\$\$}
+
+			\subsection{Zlomky}
+				Poznáte tento vzorec?
+				$$x_{1,2} = \frac{-b \pm \sqrt{D}}{2a}$$
+				Vstup: \texttt{\$\$x\_\{1,2\} = \textbackslash{}frac\{-b \textbackslash{}pm \textbackslash{}sqrt\{D\}\}\{2a\}\$\$}
+
+			\subsection{Kombinační čísla}
+				Umíte spočítat hodnotu kombinačního čísla?
+				$${n \choose k} = \frac{n!}{(n-k)! \cdot k!}$$
+				Teď už určitě umíte.
+				\\
+				Vstup: \texttt{\$\$\{n \textbackslash{}choose k\} = \textbackslash{}frac\{n!\}\{(n-k)! \textbackslash{}cdot k!\}\$\$}
+
+			\subsection{Závorky}
+				Když číslo tři patří do intervalu 1 až 10, pak určitě patří mezi reálná čísla.
+				$$3 \in \langle 1; 10\rangle \Rightarrow 3 \in \mathbb{R}$$
+				Vstup: \texttt{\$\$3 \textbackslash{}in \textbackslash{}langle 1; 10\textbackslash{}rangle \textbackslash{}Rightarrow 3 \textbackslash{}in \textbackslash{}mathbb\{R\}\$\$}\\
+				\vspace{1cm}
+				\\
+				Na základní škole se často používá několik druhů závorek namísto kulatých. To aby byl pro žáky příklad přehlednější.
+				$$10 \cdot \left\{\frac{10-2}{4} + \left[5 + 5 - \left(3 + 6 - 2\right)\right]\right\} =$$
+				Vstup: \texttt{\$\$10 \textbackslash{}cdot \textbackslash{}left\textbackslash{}\{\textbackslash{}frac\{10-2\}\{4\} + \textbackslash{}left[5 + 5 - \textbackslash{}left(3 + 6 - 2\textbackslash{}right)\textbackslash{}right]\textbackslash{}right\textbackslash{}\} =\$\$}
+
+			\subsection{Definice}
+			Nejdříve je potřeba vložit do hlavičky řádek \texttt{\textbackslash{}usepackage\{amsthm\}} a (stále v hlavičce) pomocí příkazu \texttt{\textbackslash{}newtheorem\{definition\}\{Definice\}} seznámit LaTeX s novým prostředím \texttt{definition}. Potom už si můžeme napsat takhle krásnou definici.
+
+			\begin{definition}
+				Nechť $A \neq 0$. \textbf{Binární operací na množině} A nazveme každé zobrazení $f: A \times A \rightarrow A$.
+			\end{definition}
+
+			Jak že jsem to udělal? Podívejte se na kód:
+			\begin{verbatim}
+				\begin{definition}
+				    Nechť $A \neq 0$. \textbf{Binární operací na množině} A
+				    nazveme každé zobrazení $f: A \times A \rightarrow A$.
+				\end{definition}
+			\end{verbatim}
+
+	\newpage
+	\part{Typografie}
+		\label{typografie}
+		\paragraph{Nezalomitelná mezera} vypadá jako obyčejná mezera, ale na jejím místě nedojde k řádkovému zlomu. Na koncích řádku nesmí zůstat jednodhláskové spojky a předložky (v, s, z, k, i, I, A, atd.). Používá se také v datech, telefonních číslech, nebo mezi tituly a jmény. Zapisuje se pomocí znaku $\sim$ (například 15.$\sim$.11.$\sim$2013).
+
+		\paragraph{Fyzikální jednotky a procenta} se od čísla oddělují nezalomitelnou mezerou, pokud se jedná od podstatné jméno. V případě, že jde o přídavné jméno, píší se za číslem bez mezery (Nárůst o 5$\sim$\% vs 5\% nárůst).
+		
+		\paragraph{Interpunkce} -- tedy čárka, tečka, dvojtečka, středník, otazník, vykřičník, atd. se píše hned za znakem, mezera až za ní. Za nadpisem se tečka nepíše. Při dělení se dvojtečka píše s mezerami z obou stran, zatímco dvojtečka ve skóre se píše bez mezer.
+		
+		\paragraph{Tři tečky (výpustka)} je v LaTeXu reprezentována speciálním znakem \texttt{\textbackslash{dots}}.
+		
+		\paragraph{Uvozovky} používá každý jazyk jiné. Zapisují se příkazem \textbackslash{}uv\{text v uvozovkách\}. LaTeX je vypíše podle, v hlavičce nastaveného, jazyka.
+		
+		\paragraph{Pomlčky} Existují tři druhy -- spojovník, krátká pomlčka a dlouhá pomlčka. Dlouhá pomlčka se používá ve větě místo čárky, krátká když píšeme \uv{od--do}, nebo \uv{někdo proti někomu}. Spojovník v ostatních případech.\\Zapisují se pomocí -{}, -{}- a -{}-{}-{}.
+		
+		\section{Pravidla českého jazyka}
+			\begin{itemize}
+				\item \url{http://prirucka.ujc.cas.cz/}
+				\item \url{http://www.pravidla.cz/}
+				\item \url{http://ssjc.ujc.cas.cz/}
+				\item \url{http://eldum.phil.muni.cz/mod/resource/view.php?id=1280}
+			\end{itemize}
+	
+	\newpage
+	\begin{thebibliography}{}
+		\bibitem{uvod-do-latexu}{\em Tobias Oetiker:} Ne příliš stručný úvod do systému \LaTeX{} \textrm{$2_\varepsilon$} \texttt{http://www.root.cz/knihy/ne-prilis-strucny-uvod-do-systemu-latex-2e/}		
+
+		\bibitem{wikibooks-latex}{} \texttt{http://en.wikibooks.org/wiki/LaTeX/}
+	\end{thebibliography}
+\end{document}

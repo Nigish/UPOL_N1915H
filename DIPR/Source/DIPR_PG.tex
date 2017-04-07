@@ -1,0 +1,177 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{filecontents}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{tabularx}
+\newtheorem{theorem}{Theorem}
+\usepackage[font=footnotesize]{subcaption}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{citecolor=black}
+\hypersetup{linkcolor=black}
+\hypersetup{urlcolor=blue}
+
+
+\newcommand{\inlinecode}{\texttt}
+\title{\LaTeX{}}
+\author{Patrik Grulich}
+\begin{document}
+	\pagenumbering{gobble} 
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage	
+	\pagenumbering{arabic}
+	\setcounter{page}{3}
+   \part{LaTeX?}
+		\section{Úvod}
+    \subsection{Co je to {\LaTeX{}}}
+		\textcolor{yellow}{Mluvíme-li o LaTeXu myslíme tím typografický systém sloužící k profesionální sazbě textů.} \textcolor{red}{ Hlavním rozdílem mezi ním a textovými procesory, jakými jsou například MS Word, nebo OpenOffice Writer je ten, že dokument LaTeXu needitujete v takové podobě, v jaké bude tištěn.} \textcolor{green}{ Pro formátování textu se používají různé příkazy a symboly.}\cite{rybicka}
+   \subsection{Instalace}
+   		LaTeX je k dispozici v různých distribucích. Tou nejrozšířenější je \uv{TeXLive}\footnote{\url{http://www.tug.org/texlive/}}. Být na vašem místě, měl bych obavy, jelikož TeXLive (lépe řečeno jeho instalace) je velice náladový. Ztráta připojení (a zrušení instalace) hrozí, i když je počítač připojený k síti za pomoci Ethernetového kabelu. Na druhou stranu podporuje mnoho operačních systémů a architektur\footnote{\url{http://www.tug.org/texlive/doc.html}}.
+		\\
+		TeXLive vám sice umožní překlad zdrojových souborů na PDF dokumenty, ale o uživatelské přívětivosti nelze ani hovořit. Proto na scénu přichází \uv{TexMaker}\footnote{\url{http://www.xm1math.net/texmaker/}}.	
+ \newpage
+ \part{Pismo}
+ \section{Změna vlastností písma}
+ \label{pismo}
+ 	\subsection{Formát písma}
+			 \uv{\textit{ Justice, huh? The meaning of justice can change from one day to the next. A professional soldier never brings justice into the mission. }\textsf{The only ones who need a reason to fight}\texttt{ are the ones who fight for a living. That's what my mentor told me. }\textbf{They change with the times. So long as we remain loyal to our countries, } 
+\textsc{soldiers like us need nothing to believe in.}}\cite{Big}
+
+	\subsection{Velikost písma}
+			\uv{\LARGE{I was born in a} \Huge{small village. I was still a child} \Large{when we were raided by soldiers -} \LARGE{foreign soldiers. Torn from my elders} \huge{I was made to speak their language.} \tiny{With each new post my masters changed along with the words they made me speak.} \footnotesize {With each change - I changed too. My thoughts, personality,} \normalsize{How I saw right and wrong... Words Can Kill.}} \cite{Skull}
+\newpage
+\section{Zdrojový text z programovacího jazyka}
+
+\begin{lstlisting}
+/**
+* cast kodu windows server
+*/
+int totalSize = 0;
+        if (client == INVALID_SOCKET)
+        {
+                cerr << "Problem s prijetim spojeni" <<endl;
+                WSACleanup();
+                return -1;
+        }
+\end{lstlisting}
+A k matematice(\ref{Matika})
+\newpage
+\part{Seznamy a Tabulky}
+\subsection{Seznamy}
+	\subsubsection{Odrážkovaný seznam}
+			
+\begin{itemize}
+\item první řádek
+	\begin{itemize}
+	\item první řádek.1
+		\begin{itemize}
+		\item prvni radek 1.1
+			\begin{itemize}
+			\item prvni radek 1.1.1
+			\end{itemize}
+		\end{itemize}		
+	\item první řádek.2
+	\end{itemize}
+\item druhý řádek
+\end{itemize}
+
+		\subsubsection{Číslovaný seznam}
+\begin{enumerate}
+\item první řádek
+	\begin{enumerate}
+	\item první rádek.1
+		\begin{enumerate}
+		\item první řádek 1.1
+			\begin{enumerate}
+			\item první řádek 1.1.1
+			\end{enumerate}
+		\item první řádek 1.2
+		\end{enumerate}		
+	\item první řádek.2
+	\end{enumerate}
+\item druhý řádek
+\end{enumerate}
+			
+\newpage
+\subsection{Tabulka}
+čáry mezi buňkami, sloučené buňky
+\begin{table}[h!]
+    \begin{tabular}{|l*{6}{|l}|}
+    \hline
+    \multicolumn{2}{|l|}{Jméno a příjmení} & \multicolumn{5}{|c|}{Následují nuly} \\ \hline
+    \multicolumn{2}{|l|}{Patrik Grulich} & 0 & 0 & 0 & 0 & 0 \\
+    \hline  
+    \end{tabular}  
+\end{table}
+\newpage
+\part{Matika a Tikz}
+\section{Matika}
+\label{Matika}
+\subsection{vzorec}
+\begin{displaymath}
+\lim_{n \to \infty}
+\sum_{k=1}^n \frac{1}{k^2}
+= \frac{\pi^2}{6}
+\end{displaymath}
+\subsection{rovnice}
+\begin{displaymath}
+c^{2}=a^{2}+b^{2}
+\end{displaymath}
+\subsection{matice}
+$$\left( \begin{array}{ccc@{\ }r}
+    a & b & c & -10.15 \\
+    a & b & c & 3.1 \\
+    a & 0.3 b & 0.1c & -24 \\
+    \end{array} \right)$$
+\subsection{důkaz}
+\begin{proof}
+Zde je důkaz, že platí 
+$c^{2}=a^{2}+b^{2}$
+\[
+a^2 + b^2 = c^2 
+\]
+\end{proof}
+\subsection{věta}
+\begin{theorem}Komutativnost sčítání:
+Pro všechna reálná čísla platí
+\[
+a+b=b+a.
+\]
+\end{theorem}
+\newpage
+\section{Tikz}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{tikz-obrazek}
+    \caption{maly graf}
+    \label{fig:graf}
+\end{figure}	
+\newpage
+Jak lze vidět na grafu(\ref{fig:graf}) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor ut enim at vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis purus felis. Nulla posuere urna ex, ac dictum velit volutpat a. Phasellus non ipsum auctor, faucibus massa at, elementum sapien. Curabitur pellentesque ultricies molestie. Maecenas dignissim semper risus volutpat laoreet. Donec ut ultricies nisl. Mauris pulvinar ut libero vel molestie. Proin eu scelerisque massa, vel placerat justo. Vivamus eget ultricies orci. Nam turpis tellus, lacinia sit amet volutpat at, elementum nec eros. Proin velit neque, sodales sit amet ante nec, consequat mattis orci. Proin suscipit neque quam, ac elementum libero euismod consectetur.
+
+Nulla efficitur finibus justo, at gravida mi iaculis sed. Integer faucibus felis et tellus bibendum, at vehicula nibh pulvinar. Duis mattis pretium lorem. Etiam ut lobortis augue, a vulputate lacus. Sed in tincidunt neque, nec placerat nunc. In pharetra nisl vel nisl feugiat, vitae tempor eros condimentum. Suspendisse nibh dui, finibus sit amet scelerisque eu, congue sit amet felis. Aliquam interdum turpis non nunc blandit, vitae maximus turpis elementum. Pellentesque vel finibus est. Vivamus non porttitor sapien. Pellentesque dignissim, lacus ac aliquam ullamcorper, felis diam viverra urna, eu placerat elit turpis et metus. Nunc lacinia sed nisl nec condimentum. Duis justo ex, hendrerit vel urna ut, lacinia blandit sapien. In hac habitasse platea dictumst. Pellentesque tempus enim in purus egestas semper.
+
+Aliquam aliquam tempus facilisis. Nunc tempus tellus nec lectus euismod, quis iaculis mi porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque ut nunc sit amet lacus pellentesque sodales quis eu neque. Ut eget feugiat libero. Donec sollicitudin, tortor sit amet condimentum hendrerit, neque odio vulputate neque, vitae tincidunt tellus velit eu leo. Nullam a massa suscipit, elementum ante a, faucibus quam. Duis neque odio, sagittis in enim in, pellentesque auctor odio. Aliquam blandit, nibh sed porta aliquam, justo nisl finibus nisi, non blandit nisi quam quis nibh. Phasellus aliquet metus vel felis feugiat congue.
+A zpět k písmu(\ref{pismo})
+\newpage
+\section{Seznam literatury a citací}
+\begin{thebibliography}{9}
+\bibitem{rybicka} RYBIČKA, Jiří.
+\emph{\LaTeX{} pro začátečníky}. 3. vydání.
+Brno: Konvoj, 2003. 
+ISBN 80-7302-049-1.
+\bibitem{Big} ITOH, Projec.
+\emph{Metal Gear Solid 4: Guns Of The Patriots.}
+Konami Computer Entertainment Japan (2010).
+\bibitem{Skull} NOJIMA, Hitori.
+\emph{Metal Gear Solid - The Phantom Pain.}
+Konami Computer Entertainment Japan (2015).
+\end{thebibliography}
+\end{document}
