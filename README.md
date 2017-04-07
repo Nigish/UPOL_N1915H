@@ -1,2 +1,2 @@
-# UPOL_N1915H
+# UPOL_TiMa
 Solution of Tasks
