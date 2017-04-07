@@ -1,0 +1,45 @@
+
+\gdef\mpxshipout{\shipout\hbox\bgroup
+  \setbox0=\hbox\bgroup}
+\gdef\stopmpxshipout{\egroup  \dimen0=\ht0 \advance\dimen0\dp0
+  \dimen1=\ht0 \dimen2=\dp0
+  \setbox0=\hbox\bgroup
+    \box0
+    \ifnum\dimen0>0 \vrule width1sp height\dimen1 depth\dimen2 
+    \else \vrule width1sp height1sp depth0sp\relax
+    \fi\egroup
+  \ht0=0pt \dp0=0pt \box0 \egroup}
+\mpxshipout% line 28 ./METAPOST_1.mp
+$A$%
+\stopmpxshipout
+\mpxshipout% line 29 ./METAPOST_1.mp
+$\displaystyle A=\int_1^a {dx\over x}=\ln a$%
+\stopmpxshipout
+\mpxshipout% line 57 ./METAPOST_1.mp
+$x$%
+\stopmpxshipout
+\mpxshipout% line 58 ./METAPOST_1.mp
+$y$%
+\stopmpxshipout
+\mpxshipout% line 60 ./METAPOST_1.mp
+$1$%
+\stopmpxshipout
+\mpxshipout% line 61 ./METAPOST_1.mp
+$a$%
+\stopmpxshipout
+\mpxshipout% line 63 ./METAPOST_1.mp
+$\displaystyle y={1\over x}$%
+\stopmpxshipout
+\mpxshipout% line 68 ./METAPOST_1.mp
+Logarithm and area%
+\stopmpxshipout
+\mpxshipout% line 69 ./METAPOST_1.mp
+\cyr  logarifm i plowad\char126%
+\stopmpxshipout
+\mpxshipout% line 73 ./METAPOST_1.mp
+Urs Oswald%
+\stopmpxshipout
+\mpxshipout% line 74 ./METAPOST_1.mp
+06.09.2002%
+\stopmpxshipout
+\end{document}

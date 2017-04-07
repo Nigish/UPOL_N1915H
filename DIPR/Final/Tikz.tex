@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{calendar,folding}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+
+\begin{comment}
+Cal for 2017 (Origami)
+\end{comment}
+
+\begin{document}
+    \sffamily\scriptsize
+    \begin{tikzpicture}[transform shape,
+        every calendar/.style={
+            at={(-8ex,4ex)},
+            week list,
+            month label above centered, 
+            month text=\bfseries\textcolor{red}{\%mt} \%y0,
+            if={(Sunday) [black!50]}
+        }]
+    \tikzfoldingdodecahedron[
+        folding line length=2.5cm,
+        face 1={ \calendar [dates=2017-01-01 to 2017-01-last];},
+        face 2={ \calendar [dates=2017-02-01 to 2017-02-last];},
+        face 3={ \calendar [dates=2017-03-01 to 2017-03-last];},
+        face 4={ \calendar [dates=2017-04-01 to 2017-04-last];},
+        face 5={ \calendar [dates=2017-05-01 to 2017-05-last];},
+        face 6={ \calendar [dates=2017-06-01 to 2017-06-last];},
+        face 7={ \calendar [dates=2017-07-01 to 2017-07-last];},
+        face 8={ \calendar [dates=2017-08-01 to 2017-08-last];},
+        face 9={ \calendar [dates=2017-09-01 to 2017-09-last];},
+        face 10={\calendar [dates=2017-10-01 to 2017-10-last];},
+        face 11={\calendar [dates=2017-11-01 to 2017-11-last];},
+        face 12={\calendar [dates=2017-12-01 to 2017-12-last];}
+        %face 12={\calendar [dates=\the\year-12-01 to \the\year-12-last];
+    ];
+    \end{tikzpicture}
+\end{document}
