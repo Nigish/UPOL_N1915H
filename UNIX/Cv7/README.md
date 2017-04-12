@@ -1,1 +1,1 @@
-Cv_7 - dokončovaní předchozí úkoly
+Cv_7
